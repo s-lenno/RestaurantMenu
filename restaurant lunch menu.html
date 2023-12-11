@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SL Restaurant Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Restaurant Menu</h1>
+
+    <label for="category-filter">Choose section:</label>
+    <select id="category-filter" onchange="filterMenu()">
+        <option value="all">All</option>
+        <option value="starters">Starters</option>
+		<option value="pizzas">Pizzas</option>
+        <option value="main-course">Main courses</option>
+        <option value="drinks">Drinks</option>
+		
+		
+    </select>
+
+    <h2>Starters</h2>
+
+    <div class="menu-item starters">
+        <p class="item-name">Garlic Bread</p>
+        <p class="item-description">Toasted bread with garlic butter.</p>
+        <p class="price">£4.99</p>
+    </div>
+
+    <div class="menu-item starters">
+        <p class="item-name">Bruschetta</p>
+        <p class="item-description">Toasted Italian bread topped with fresh tomatoes, basil, and garlic.</p>
+        <p class="price">£6.99</p>
+    </div>
+<div class="menu-item starters">
+    <p class="item-name">Buffalo Chicken Wings</p>
+    <p class="item-description">Our very own baked chicken wings in a spicy Buffalo marinade sauce served with garlic mayonaisse dip and celery.</p>
+    <p class="price">£7.99</p>
+</div>
+
+<div class="menu-item starters">
+    <p class="item-name">Spinach and Artichoke Dip</p>
+    <p class="item-description">Creamy spinach and artichoke dip served with tortilla chips.</p>
+    <p class="price">£8.99</p>
+</div>
+
+<div class="menu-item starters">
+    <p class="item-name">Onion Rings</p>
+    <p class="item-description">Lightly battered and fried onion rings served with marinara sauce.</p>
+    <p class="price">£9.99</p>
+</div>
+
+<h2>Pizzas</h2>
+<h3>All of our pizzas are 14" thin crust woodfired</h3>
+
+<div class="menu-item pizzas">
+    <p class="item-name">Margherita Pizza</p>
+    <p class="item-description">Fresh tomatoes, mozzarella cheese, and basil on a thin crust.</p>
+    <p class="price">£10.99</p>
+</div>
+
+<div class="menu-item pizzas">
+    <p class="item-name">Pepperoni Pizza</p>
+    <p class="item-description">Classic pizza with pepperoni slices and melted mozzarella cheese.</p>
+    <p class="price">£13.99</p>
+</div>
+
+<div class="menu-item pizzas">
+    <p class="item-name">Vegetarian Pizza</p>
+    <p class="item-description">Assorted fresh vegetables, mozzarella cheese, and tomato sauce.</p>
+    <p class="price">£12.99</p>
+</div>
+
+<div class="menu-item pizzas">
+    <p class="item-name">BBQ Chicken Pizza</p>
+    <p class="item-description">Grilled chicken, red onions, barbecue sauce, and mozzarella cheese.</p>
+    <p class="price">£14.99</p>
+</div>
+
+<div class="menu-item pizzas">
+    <p class="item-name">Hawaiian Pizza</p>
+    <p class="item-description">Ham, pineapple, and mozzarella cheese on a tomato sauce base.</p>
+    <p class="price">£13.99</p>
+</div>
+
+<div class="menu-item pizzas">
+    <p class="item-name">Mushroom Truffle Pizza</p>
+    <p class="item-description">Sautéed mushrooms, truffle oil, mozzarella, and parmesan cheese.</p>
+    <p class="price">£15.99</p>
+</div>
+
+<div class="menu-item pizzas">
+    <p class="item-name">Margherita Stuffed Crust Pizza</p>
+    <p class="item-description">Margherita pizza with a delicious stuffed crust.</p>
+    <p class="price">£16.99</p>
+</div>
+
+<div class="menu-item pizzas">
+    <p class="item-name">Meat Lovers Pizza</p>
+    <p class="item-description">Pepperoni, sausage, bacon, and ham with mozzarella cheese.</p>
+    <p class="price">£17.99</p>
+</div>
+
+<div class="menu-item pizzas">
+    <p class="item-name">Buffalo Chicken Pizza</p>
+    <p class="item-description">Spicy buffalo sauce, grilled chicken, red onions, and blue cheese.</p>
+    <p class="price">£15.99</p>
+</div>
+
+<div class="menu-item pizzas">
+    <p class="item-name">Pesto and Sun-Dried Tomato Pizza</p>
+    <p class="item-description">Basil pesto, sun-dried tomatoes, mozzarella, and feta cheese.</p>
+    <p class="price">£16.99</p>
+</div>
+
+<div class="menu-item pizzas">
+    <p class="item-name">Four Cheese Pizza</p>
+    <p class="item-description">Mozzarella, cheddar, feta, and parmesan cheeses on a garlic-infused crust.</p>
+    <p class="price">£14.99</p>
+</div>
+
+<div class="menu-item pizzas">
+    <p class="item-name">White Pizza</p>
+    <p class="item-description">Ricotta cheese, garlic, spinach, and mozzarella on an olive oil base.</p>
+    <p class="price">£15.99</p>
+</div>
+
+<div class="menu-item pizzas">
+    <p class="item-name">Barbecue Bacon Ranch Pizza</p>
+    <p class="item-description">Barbecue sauce, bacon, ranch dressing, and red onions.</p>
+    <p class="price">£17.99</p>
+</div>
+
+<div class="menu-item pizzas">
+    <p class="item-name">Make Your Own Pizza</p>
+    <p class="item-description">Start with a Margherita base and add your favorite toppings</p>
+    <p class="price">£10.99</p>
+    <p class="topping-price">Additional Toppings: £0.69 each</p>
+</div>
+
+    <h2>Main Course</h2>
+
+   <div class="menu-item main-course">
+        <p class="item-name">Chicken Caesar Salad</p>
+        <p class="item-description">Grilled chicken, crisp romaine lettuce, croutons, and parmesan cheese tossed with Caesar dressing.</p>
+        <p class="price">£9.99</p>
+    </div>
+
+
+    <div class="menu-item main-course">
+        <p class="item-name">Spaghetti Bolognese</p>
+        <p class="item-description">Spaghetti pasta with a rich and savory meat sauce.</p>
+        <p class="price">£8.99</p>
+    </div>
+
+    <div class="menu-item main-course">
+        <p class="item-name">Grilled Salmon</p>
+        <p class="item-description">Freshly grilled salmon fillet served with lemon and herb butter.</p>
+        <p class="price">£14.99</p>
+    </div>
+
+    <h2>Drinks</h2>
+
+
+    <div class="menu-item drinks">
+        <p class="item-name">Fresh Orange Juice</p>
+        <p class="item-description">100% pure squeezed orange juice.</p>
+        <p class="price">£3.99</p>
+    </div>
+
+    <div class="menu-item drinks">
+        <p class="item-name">Iced Tea</p>
+        <p class="item-description">Chilled black tea served over ice.</p>
+        <p class="price">£2.99</p>
+    </div>
+
+    <h2>Shopping Cart</h2>
+
+    <ul id="shopping-cart"></ul>
+
+    <h2>Allergen Disclaimer</h2>
+
+    <p class="allergen-disclaimer">Please note that our menu items may contain or come into contact with common allergens, including peanuts, tree nuts, soy, milk, eggs, wheat, fish, and shellfish. If you have specific dietary concerns, please ask the waiter for more information.</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
